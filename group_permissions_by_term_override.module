@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @param array $grants
+ * @param \Drupal\node\NodeInterface $node
+ */
+function group_permissions_by_term_override_node_access_records_alter(&$grants, Drupal\node\NodeInterface $node) {
+
+  $override = null;
+
+  foreach ($grants as $grant) {
+    if ($grant['realm'] === 'permissions_by_term') {
+      $override = $grant;
+    }
+  }
+
+  if ($override !== null) {
+    $grants = [
+      'permissions_by_term' => $override,
+    ];
+  }
+}
