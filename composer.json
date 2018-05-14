@@ -1,0 +1,31 @@
+{
+  "name": "mach25/group_permissions_by_term_override",
+  "description": "Drupal 8 module to enable Permissions By Term module to override the grants of Group module",
+  "type": "drupal-module",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Johan Ipsonius",
+      "email": "johan.ipsonius@raccoon.se"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "drupal/core": "^8.0",
+    "drupal/group": "dev-8.x-1.x",
+    "drupal/permissions_by_term": "^1.48"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/mach25/group.git"
+    }
+  ]
+}

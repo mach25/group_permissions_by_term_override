@@ -34,3 +34,9 @@ xmlrpc.php
 /profiles
 /scripts
 /themes
+
+/vendor/
+
+# Ignore Intellij / phpstorm project files
+*.iml
+/.idea

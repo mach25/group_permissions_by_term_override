@@ -1,0 +1,8 @@
+name: 'Group Permissions By Term Override'
+type: module
+package: 'Group'
+description: 'Drupal 8 module to enable Permissions By Term module to override the grants of Group module'
+core: 8.x
+dependencies:
+  - 'drupal:group'
+  - 'drupal:permissions_by_term'
