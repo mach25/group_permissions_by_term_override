@@ -10,11 +10,6 @@
     }
   ],
   "minimum-stability": "dev",
-  "require": {
-    "drupal/core": "^8.0",
-    "drupal/group": "dev-8.x-1.x",
-    "drupal/permissions_by_term": "^1.48"
-  },
   "require-dev": {
     "roave/security-advisories": "dev-master"
   },
